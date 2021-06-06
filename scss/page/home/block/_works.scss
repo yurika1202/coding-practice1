@@ -1,0 +1,58 @@
+@charset "utf-8";
+@use "../../../global" as global;
+
+/* works
+----------------------------------------- */
+.works {
+    background: url(../img/works-bgi@2x.jpg) no-repeat center center / cover;
+    width: 100vw;
+}
+
+.works__wrapper {
+    margin: 8rem auto 19.2rem;
+}
+
+.works__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include global.mq() {
+    }
+}
+
+.works__item {
+    width: calc(100% / 3 - 2rem * 2 / 3);
+    background: global.$color-bg;
+    transition: all ease 0.5s;
+
+    &:hover {
+        transform: scale(1.05, 1.05);
+    }
+
+    @include global.mq() {
+        width: 93%;
+        margin: 0 auto;
+
+        &:not(:first-child) {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.works__img {
+    width: 100%;
+
+    img {
+        vertical-align: top;
+    }
+}
+
+.works__text {
+    padding: 2.5rem 2rem;
+}
+
+.works__btn {
+    margin-top: 8rem;
+    text-align: center;
+}

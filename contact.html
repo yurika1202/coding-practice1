@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<title>クリスタ中級編</title>
+
+<meta name="description"  content="">
+<meta name="robots" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!--Google Font-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- header-menu -->
+    <header class="header">
+
+        <div class="header__wrapper inner">
+
+            <h1 class="header__logo">Cresta Design</h1><!-- /.header__logo -->
+
+            <nav class="header__nav">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#concept">Concept</a></li><!-- /.nav__item -->
+                    <li class="nav__item"><a href="#service">Service</a></li><!-- /.nav__item -->
+                    <li class="nav__item"><a href="#works">Works</a></li><!-- /.nav__item -->
+                    <li class="nav__item"><a href="#contact">Contact</a></li><!-- /.nav__item -->
+                </ul><!-- /.nav__items -->
+            </nav><!-- /.header__nav -->
+
+        </div><!-- /.header__wrapper -->
+
+    </header>
+
+    <!-- sp-menu -->
+    <button class="sp-menu__btn">
+        <span></span><span></span><span></span>
+    </button><!-- /.sp-menu__btn -->
+
+    <nav class="sp-menu__nav">
+        <ul class="nav__items_sp">
+            <li class="nav__item_sp"><a href="#concept">Concept</a></li><!-- /.nav__item_sp -->
+            <li class="nav__item_sp"><a href="#service">Service</a></li><!-- /.nav__item_sp -->
+            <li class="nav__item_sp"><a href="#works">Works</a></li><!-- /.nav__item_sp -->
+            <li class="nav__item_sp"><a href="#contact">Contact</a></li><!-- /.nav__item_sp -->
+        </ul><!-- /.nav__items_sp -->
+    </nav><!-- /.sp-menu__nav -->
+
+    <!-- first-view -->
+    <div class="fv__contents_contact">
+        <h2 class="fv__title_contact">Contact</h2><!-- /.fv__title_contact -->
+        <p class="fv__bg-text">Contact us</p><!-- /.fv__bg-text -->
+    </div><!-- /.fv__contents_contact -->
+
+    <!-- form -->
+    <form method="post" id="js-form" class="form__contents">
+        <!-- お問い合わせ内容 -->
+        <div class="form__item">
+            <dt class="form__label">
+                <label for="type">お問い合わせ内容</label>
+            </dt><!-- /.form__label -->
+
+            <dd class="form__select">
+                <div class="select__item">
+                    <label for="material" class="select__label">
+                        <input type="radio" id="material" value="資料請求" name="select" checked>
+                        <span class="select__parts"></span>資料請求
+                    </label>
+                </div><!-- /.select__item -->
+
+                <div class="select__item">
+                    <label for="advice" class="select__label">
+                        <input type="radio" id="advice" value="お電話でのご相談を希望" name="select">
+                        <span class="select__parts"></span>お電話でのご相談を希望
+                    </label>
+                </div><!-- /.select__item -->
+
+                <div class="select__item">
+                    <label for="entry" class="select__label">
+                        <input type="radio" id="entry" value="申し込み" name="select">
+                        <span class="select__parts"></span>申し込み
+                    </label>
+                </div><!-- /.select__item -->
+            </dd><!-- /.form__select -->
+        </div><!-- /.form__item -->
+
+        <!-- 氏名 -->
+        <div class="form__item">
+            <dt class="form__label">
+                <label for="name">担当者名</label>
+            </dt><!-- /.form__label -->
+            <dd class="form__input">
+                <input type="text" id="name" required>
+            </dd><!-- /.form__input -->
+        </div><!-- /.form__item -->
+
+        <!-- 電話番号 -->
+        <div class="form__item">
+            <dt class="form__label">
+                <label for="tel">電話番号</label>
+            </dt><!-- /.form__label -->
+            <dd class="form__input">
+                <input type="text" id="tel" required>
+            </dd><!-- /.form__input -->
+        </div><!-- /.form__item -->
+
+        <!-- メールアドレス -->
+        <div class="form__item">
+            <dt class="form__label">
+                <label for="mail" class="is-must">メールアドレス</label>
+            </dt><!-- /.form__label -->
+            <dd class="form__input">
+                <input type="text" id="mail" required>
+            </dd><!-- /.form__input -->
+        </div><!-- /.form__item -->
+
+        <!-- テキストエリア -->
+        <div class="form__item">
+            <dt class="form__label">
+                <label for="text">その他</label>
+            </dt><!-- /.form__label -->
+            <dd class="form__input_text">
+                <textarea id="text"></textarea>
+            </dd><!-- /.form__input_text -->
+        </div>
+
+        <!-- 送信ボタン -->
+        <div class="form__btn">
+            <button type="submit" id="js-submit" class="btn" disabled>Submit</button>
+        </div><!-- form__btn -->
+    </form>
+
+    <!-- footer -->
+    <footer class="footer">
+        <small class="footer__copy">&copy;cresta.design all rights reserved</small>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

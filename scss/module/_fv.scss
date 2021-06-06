@@ -1,0 +1,102 @@
+@charset "utf-8";
+@use "../global" as global;
+
+/* first-view
+-------------------------------------- */
+.fv__contents {
+    width: 100vw;
+    height: 75.2rem;
+    position: relative;
+
+    @include global.mq() {
+        height: 60rem;
+    }
+}
+
+.fv__bg {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: bgAnime 18s infinite;
+
+    &._1 {
+        background: url(../img/fv-bgi_01@2x.jpg) no-repeat center center / cover;
+    }
+
+    &._2 {
+        background: url(../img/fv-bgi_02@2x.jpg) no-repeat center center / cover;
+        animation-delay: 6s;
+    }
+
+    &._3 {
+        background: url(../img/fv-bgi_03@2x.jpg) no-repeat center center / cover;
+        animation-delay: 12s;
+    }
+}
+
+@keyframes bgAnime {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% { opacity: 0 }
+}
+
+.fv__message {
+    position: absolute;
+    left: 12rem;
+    bottom: 22.872%;
+
+    @include global.mq(md) {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+
+    @include global.mq() {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+.fv__title {
+    font: bold 7rem global.$font-family-awesome_en;
+    color: global.$color-text_wh;
+    line-height: 1.8;
+    letter-spacing: 3.5px;
+    
+    @include global.mq(md) {
+        text-align: center;
+    }
+
+    @include global.mq() {
+        font-size: 3.7rem;
+        text-align: center;
+        line-height: 0.5;
+        letter-spacing: 2px;    
+    }
+}
+
+.fv__lead {
+    font: bold 4rem global.$font-family-awesome_jp;
+    color: global.$color-text_wh;
+    text-align: center;
+
+    @include global.mq() {
+        font-size: 3rem;
+        margin-top: 6.3rem;
+    }
+}

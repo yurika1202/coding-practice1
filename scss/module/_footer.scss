@@ -1,0 +1,17 @@
+@charset "utf-8";
+@use "../global" as global;
+
+/* footer
+---------------------------------------- */
+.footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer__copy {
+    font: bold 1.4rem global.$font-family-awesome_en;
+
+    @include global.mq() {
+        letter-spacing: 0.7px;
+    }
+}
